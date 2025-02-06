@@ -1,0 +1,21 @@
+.restarunt-logo {
+  width: 100px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: solid 1px;
+}
+.nav-container ul {
+  display: flex;
+  list-style-type: none;
+  padding: 5px;
+}
+.nav-container ul li {
+  padding: 5px;
+}
+.res-image img {
+  width: 200px;
+  height: 150px;
+}
