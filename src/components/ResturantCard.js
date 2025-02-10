@@ -1,16 +1,18 @@
 import { RES_IMAGE } from "../utils/constants";
-const ResturantCard = ({ data }) => {
-  console.log(data);
+const RestaurantCard = ({ data }) => {
   return (
     <div className="res-container">
-      <div className="res-image">
-        <img src={RES_IMAGE + props.data.card.card.info.cloudinaryImageId} />
-      </div>
+        <img src={RES_IMAGE + data.info.cloudinaryImageId} />
       <div className="res-body">
-        <h2>Nandana Palace</h2>
+        <h2>{data.info.name}</h2>
+        <div className="res-star">
+          <h4>{data.info.avgRating}</h4>
+          <h4>{ data.info.sla.slaString}</h4>
+        </div>
+        <p>{data.info.cuisines.join(", ")}</p>
       </div>
     </div>
   );
 };
 
-export default ResturantCard;
+export default RestaurantCard;

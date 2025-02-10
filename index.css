@@ -6,6 +6,7 @@
   display: flex;
   justify-content: space-between;
   border: solid 1px;
+  margin-bottom: 10px;
 }
 .nav-container ul {
   display: flex;
@@ -15,7 +16,63 @@
 .nav-container ul li {
   padding: 5px;
 }
-.res-image img {
-  width: 200px;
-  height: 150px;
+.res-container{
+  width: 280px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0, 0.1);
+  background: white;
+  transition: transform0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.res-container:hover{
+  transform: scale(0.95);
+}
+.res-container img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.res-body {
+  padding: 15px;
+  text-align: left;
+}
+.res-body h2 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.res-body h4 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin: 0 10px 0 0;
+}
+.res-body p {
+  font-size: 14px;
+  color: #666;
+  font-weight: bold;
+}
+.res-star {
+  display: flex;
+}
+.body-of {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.search {
+  margin-bottom: 10px;
+}
+
+.search input {
+  margin: 5px;
+}
+
+.shimmer-card {
+
+}
+.shimmer-container {
+  
 }
